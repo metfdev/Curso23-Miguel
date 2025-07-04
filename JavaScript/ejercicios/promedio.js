@@ -12,3 +12,4 @@ function promedio(notas=[], suma=0, contador=0) {
         alert("No se ingresaron números.");
     }
 }
+
