@@ -12,6 +12,8 @@ function Pokemon() {
         .catch((err) => console.log(err));
     }, [id]);
 
+    if(!pokemon){return <h1>No hay pokemon para mostrar</h1>}
+
     return (
       <div>
         <img src={pokemon?.sprites?.front_default} alt={pokemon?.name} />
